@@ -36,7 +36,7 @@
  * POSSIBILITY OF SUCH DAMAGE. 
  * 
  * @author     Hernan Arriagada <soporte@orangepeople.cl> 
- * @copyright  2011 OrangePeople Software LTDA. <soporte@orangepeople.cl> 
+ * @copyright  2012 OrangePeople Software LTDA. <soporte@orangepeople.cl> 
  * @license    http://www.opensource.org/licenses/bsd-license.php  BSD License 
  * @version    1.0.0
  */
