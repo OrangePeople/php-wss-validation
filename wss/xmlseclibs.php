@@ -507,11 +507,16 @@ class XMLSecurityKey {
 
     private function verifyOpenSSL($data, $signature) {
         $algo = OPENSSL_ALGO_SHA1;
+        $return_value = false;
         if (!empty($this->cryptParams['digest'])) {
             $algo = $this->cryptParams['digest'];
         }
 
-        return openssl_verify($data, $signature, $this->key, $algo);
+        $verify_value = openssl_verify($data, $signature, $this->key, $algo);
+        if ($verify_value == 1) {
+            $return_value = true;
+        }
+        return $return_value;
     }
 
     public function encryptData($data) {
